@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		int t, t2;
+		double f = 0;
+		
+		System.out.println("Insira a temperatura inicial em Celsius: ");
+		t = teclado.nextInt();
+		
+		System.out.println("Insira a temperatura final em Celsius");
+		t2 = teclado.nextInt();
+		
+		
+		for (int cont = 0; cont <= t2 && cont >= t; cont++ ) {
+			f = (9 * t)/5 + 32;
+			t++;
+			System.out.println(t + " ---> " + f);
+		}
+		while(t <= t2) {
+			t++;
+		}
+
+	}
+
+}

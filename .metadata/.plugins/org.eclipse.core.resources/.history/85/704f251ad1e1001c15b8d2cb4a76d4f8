@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		double d, x, y;
+		int n;
+		
+		System.out.println("Total de pontos = ");
+		n = teclado.nextInt();
+		
+		for(int cont = 1; cont<=n; cont++) {
+			System.out.println("Insira o valor de x = ");
+			x = teclado.nextInt();
+			teclado.nextLine();
+			System.out.println("Insira o valor de y = ");
+			y = teclado.nextInt();
+			
+
+			d = Math.sqrt((x - x) * (x - x) + (y - y) * (y - y));
+			
+			System.out.println("O valor da distância é : " + d);
+		}
+
+
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Ex6 {
+
+	public static void main(String[] args) {
+	
+		Scanner teclado = new Scanner(System.in);
+		double s, i;
+		
+		System.out.print("O salário é = ");
+		s = teclado.nextDouble();
+		
+		if (s <= 2000) {
+		    System.out.println("Isento");
+		}else{
+			if (s <= 3000) {
+				i = (s - 2000) * 0.08;
+		}else if (s <= 4500) {
+				i = (s - 2000) * 0.18;
+			}else {
+				i = s * 0.28;
+			}System.out.println("Imposto = " + i);
+			
+		}
+
+	}
+
+}

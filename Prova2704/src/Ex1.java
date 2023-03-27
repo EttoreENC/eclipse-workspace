@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		double a, b, c;
+		
+		System.out.print("Lado 1 = ");
+		a = teclado.nextDouble();
+		
+		System.out.print("Lado 2 = ");
+		b = teclado.nextDouble();
+		
+		System.out.print("Lado 3 = ");
+		c = teclado.nextDouble();
+		
+		if (a <= b + c && b <= a + c && c <= a + b) {
+			if (a == b && b==c && c==a) {
+				System.out.println("O triângulo é equilatero");
+			}else if (a == b && b != c || a == c && c != b || b == c && b != a){
+				System.out.println("O triângulo é isósceles");
+			}else {
+				System.out.println("O triângulo é escaleno");
+			}
+			
+		}else {
+			System.out.println("Não é um triângulo");
+		}
+	}
+
+}

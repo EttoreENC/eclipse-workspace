@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		double j, p, t, d;
+		
+		System.out.println("Informe o valor principal = ");
+		p = teclado.nextDouble();
+		
+		System.out.println("Informe o valor da taxa, entre 0 e 1 = ");
+		t = teclado.nextDouble();
+		
+		System.out.println("Informe o prazo do empréstimo em dias = ");
+		d = teclado.nextDouble();
+		
+		j = p * t * d/365;
+
+	}
+
+}

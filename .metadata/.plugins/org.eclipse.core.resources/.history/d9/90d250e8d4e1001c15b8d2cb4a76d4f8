@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclado = new Scanner(System.in);
+		int t, t2;
+		double f = 0;
+		
+		System.out.println("Insira a temperatura inicial em Celsius: ");
+		t = teclado.nextInt();
+		
+		System.out.println("Insira a temperatura final em Celsius");
+		t2 = teclado.nextInt();
+		
+		while(t <= t2) {
+			f = (9 * t)/5 + 32;
+			t++;
+			System.out.println(t + " ---> " + f);
+		}
+
+	}
+
+}

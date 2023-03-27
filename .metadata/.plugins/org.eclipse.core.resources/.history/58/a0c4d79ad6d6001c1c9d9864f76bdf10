@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Ex6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclado = new Scanner(System.in);
+		double y = 0;
+		int n, cont;
+		
+		System.out.println("Valor de n = ");
+		n = teclado.nextInt();
+		
+		if(n < 0) {
+			System.out.println("Valor deve ser positivo");
+		}else {
+			cont = 1;
+			while (cont <= n) {
+				y = y + cont /Math.sqrt(cont);
+				cont++;
+			}
+			System.out.println("y = " + y);
+		}
+
+	}
+
+}

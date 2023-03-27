@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Ex7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner teclado = new Scanner(System.in);
+		int x, cont;
+		
+		System.out.println("Valor do número = ");
+		x = teclado.nextInt();
+		
+		if (x < 0) {
+			System.out.println("O valor deve ser inteiro e positivo");
+		}else {
+			
+		}
+		
+
+	}
+
+}
